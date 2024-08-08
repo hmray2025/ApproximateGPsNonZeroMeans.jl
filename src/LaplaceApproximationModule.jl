@@ -168,7 +168,7 @@ function _check_laplace_inputs(
     lfx::LatentFiniteGP, ys; f_init=nothing, maxiter=100, newton_kwargs...
 )
     fx = lfx.fx
-    @assert mean(fx) == zero(mean(fx))  # might work with non-zero prior mean but not checked
+    # @assert mean(fx) == zero(mean(fx))  # might work with non-zero prior mean but not checked
     @assert length(ys) == length(fx)  # LaplaceApproximation currently does not support multi-latent likelihoods
     dist_y_given_f = lfx.lik
     K = cov(fx)

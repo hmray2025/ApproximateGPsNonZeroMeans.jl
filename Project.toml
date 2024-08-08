@@ -1,4 +1,4 @@
-name = "ApproximateGPs"
+name = "ApproximateGPsNonZeroMeans"
 uuid = "298c2ebc-0411-48ad-af38-99e88101b606"
 authors = ["JuliaGaussianProcesses Team"]
 version = "0.4.6"
